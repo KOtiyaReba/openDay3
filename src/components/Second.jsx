@@ -1,7 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import React, { useState } from "react";
 
-const Second = () => {
+const Second = (props) => {
   var [name, setName] = useState("Tiya");
   const changeName = ()=>{
     console.log("btn clicked");
@@ -15,7 +15,7 @@ const Second = () => {
   }
   return (
     <div style={{ margin: "18%", textAlign: "center" }}>
-      <Typography variant="h3">Welcome to {name}</Typography>
+      <Typography variant="h3">Welcome to {name} from {props.place}</Typography>
       <br />
       <Button variant="contained" onClick={changeName}>Home</Button> &nbsp;
       <Button variant="contained" color="secondary" onClick={conName}>

@@ -13,7 +13,7 @@ const Navbar = () => {
             </Typography>
             <Button>
               <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
-                First
+                Add
               </Link>
             </Button>
             <Button>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 to={"/s"}
                 style={{ textDecoration: "none", color: "white" }}
               >
-                Second
+                View
               </Link>
             </Button>
             <Button color="inherit">Third</Button>

@@ -8,14 +8,16 @@ import Third from "./components/Third";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import BasicTab from "./components/BasicTab";
+import Add from "./components/Add";
+import View from "./components/View";
 
 function App() {
   return (
     <>
     <Navbar/>
       <Routes>
-        <Route path="/" element={<First/>}/>
-        <Route path="/s" element={<Second/>}/>
+        <Route path="/" element={<Add />}/>
+        <Route path="/s" element={<View/>}/>
         <Route path="/t" element={<Third/>}/>
         <Route path="/tab" element={<BasicTab/>}/>
 
